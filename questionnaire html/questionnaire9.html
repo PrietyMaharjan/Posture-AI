@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Questionnaire 9</title>
+
+    <link rel="stylesheet" href="css/questionnaire9.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="questionnaire-wrapper">
+
+        <div class="questionnaire-card">
+
+            <div class="top-bar">
+
+                <a href="questionnaire8.html" class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+                <div class="progress-wrapper">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <span class="step-count">9 to 10</span>
+
+            </div>
+
+            <h1>Would you like daily posture reminders?</h1>
+
+            <p class="subtitle">
+                We'll remind you to move and maintain good posture.
+            </p>
+
+            <div class="bell-icon">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+            <div class="choice-buttons">
+
+                <button type="button" class="choice-btn" onclick="selectReminder(this)">
+                    Yes, remind me
+                </button>
+
+                <button type="button" class="choice-btn" onclick="selectReminder(this)">
+                    Not now
+                </button>
+
+            </div>
+
+            <a href="questionnaire10.html" class="continue-btn">
+                Continue
+            </a>
+
+        </div>
+
+    </div>
+
+    <script>
+        function selectReminder(button) {
+            document.querySelectorAll(".choice-btn").forEach(function (btn) {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+        }
+    </script>
+
+</body>
+
+</html>

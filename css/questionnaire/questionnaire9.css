@@ -1,0 +1,149 @@
+@import url("normalize.css");
+@import url("font.css");
+@import url("theme.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: #EEF4F8;
+}
+
+.questionnaire-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.questionnaire-card {
+    width: 100%;
+    max-width: 35rem;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1.8rem;
+    box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, .15);
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    width: 3rem;
+    height: 3rem;
+    border: 0.0625rem solid #D6DEE6;
+    border-radius: 0.75rem;
+    background: #fff;
+    color: #1D6FA3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.progress-wrapper {
+    flex: 1;
+    height: 0.55rem;
+    background: #DFE7EF;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 90%;
+    height: 100%;
+    background: #156D9D;
+    border-radius: 2rem;
+}
+
+.step-count {
+    color: #9AA8B8;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #111827;
+    margin-bottom: 0.6rem;
+}
+
+.subtitle {
+    color: #667085;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.bell-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.bell-icon i {
+    font-size: 4rem;
+    color: #156D9D;
+}
+
+.choice-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.choice-btn {
+    flex: 1;
+    height: 3.3rem;
+    border: 0.0625rem solid #D8E1EA;
+    background: #fff;
+    border-radius: 0.8rem;
+    color: #111827;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: Inter, sans-serif;
+    transition: 0.25s ease;
+}
+
+.choice-btn:hover {
+    border-color: #156D9D;
+}
+
+.choice-btn.active {
+    border-color: #156D9D;
+    background: #F3FAFE;
+    color: #156D9D;
+    font-weight: 600;
+}
+
+.continue-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.5rem;
+    border: none;
+    border-radius: 1rem;
+    background: #0F6C9F;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.continue-btn:hover {
+    background: #0B5C87;
+}

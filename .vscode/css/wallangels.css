@@ -1,0 +1,473 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background-color: #eef3f7;
+    color: #111111;
+    line-height: 1.5;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.exercise-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #eef3f7;
+
+    padding: 3.3rem 3rem 8rem;
+}
+
+
+.exercise-container {
+    width: 100%;
+    max-width: 77rem;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: minmax(30rem, 1fr) minmax(34rem, 1.12fr);
+
+    gap: 3.8rem;
+
+    align-items: start;
+}
+
+.main-exercise-card {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    border-radius: 1.35rem;
+
+    padding: 1.1rem 1.1rem 1.15rem;
+
+    overflow: hidden;
+}
+
+.main-exercise-image {
+    width: 100%;
+
+    height: 17.8rem;
+
+    overflow: hidden;
+
+    border-radius: 1rem;
+
+    background-color: #e9e1db;
+}
+
+
+.main-exercise-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.main-exercise-info {
+    padding-top: 0.65rem;
+}
+
+
+.exercise-title-row {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    margin-bottom: 0.25rem;
+}
+
+
+.exercise-title-row h1 {
+    font-size: 1.3rem;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    color: #111111;
+}
+
+
+.exercise-duration {
+    flex-shrink: 0;
+
+    color: #60758f;
+
+    font-size: 0.85rem;
+
+    font-weight: 500;
+}
+
+
+.exercise-category {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 0.35rem 0.65rem;
+
+    margin-bottom: 0.45rem;
+
+    border-radius: 0.45rem;
+
+    background-color: #dcecf5;
+
+    color: #0872a0;
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+}
+
+
+.exercise-description {
+    max-width: 31rem;
+
+    color: #111111;
+
+    font-size: 0.82rem;
+
+    line-height: 1.35;
+}
+
+
+.exercise-details {
+    width: 100%;
+
+    padding-top: 0.85rem;
+}
+
+
+.exercise-details h2 {
+    color: #111111;
+
+    font-size: 1.25rem;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    margin-bottom: 0.85rem;
+}
+
+
+.how-to-section {
+    width: 100%;
+}
+
+
+.instructions {
+    margin: 0;
+
+    padding-left: 1.35rem;
+
+    color: #111111;
+
+    font-size: 0.9rem;
+
+    line-height: 1.45;
+}
+
+
+.instructions li {
+    padding-left: 0.1rem;
+
+    margin-bottom: 0.55rem;
+}
+
+
+.instructions li:last-child {
+    margin-bottom: 0;
+}
+
+
+.camera-button {
+    width: 100%;
+
+    height: 3.15rem;
+
+    margin-top: 1.7rem;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 0.55rem;
+
+    background-color: #14769f;
+
+    color: #ffffff;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    box-shadow: 0 0.2rem 0.35rem rgba(0, 0, 0, 0.18);
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.camera-button:hover {
+    background-color: #0f668b;
+}
+
+
+.camera-button:active {
+    transform: translateY(1px);
+}
+
+.related-section {
+    margin-top: 2rem;
+}
+
+
+.related-section h2 {
+    margin-bottom: 1.35rem;
+}
+
+
+.related-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1.8rem;
+}
+
+
+.related-card {
+    min-width: 0;
+
+    background-color: #ffffff;
+
+    border-radius: 1.25rem;
+
+    padding: 0.7rem 0.7rem 0.65rem;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.related-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 0.5rem 1.2rem rgba(30, 42, 64, 0.08);
+}
+
+.related-image {
+    width: 100%;
+
+    height: 10.8rem;
+
+    overflow: hidden;
+
+    border-radius: 0.85rem;
+
+    background-color: #e9e1db;
+}
+
+
+.related-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.related-info {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 0.5rem;
+
+    padding: 0.55rem 0.15rem 0;
+}
+
+
+.related-info h3 {
+    color: #111111;
+
+    font-size: 0.85rem;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+.related-info span {
+    flex-shrink: 0;
+
+    color: #60758f;
+
+    font-size: 0.75rem;
+
+    font-weight: 500;
+}
+
+
+@media (max-width: 1100px) {
+
+    .exercise-page {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .exercise-container {
+        grid-template-columns: minmax(27rem, 1fr) minmax(30rem, 1fr);
+
+        gap: 2.5rem;
+    }
+
+    .main-exercise-image {
+        height: 16rem;
+    }
+
+    .related-grid {
+        gap: 1rem;
+    }
+
+    .related-image {
+        height: 9.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .exercise-page {
+        padding: 2rem 1.5rem 5rem;
+    }
+
+    .exercise-container {
+        grid-template-columns: 1fr;
+
+        max-width: 45rem;
+
+        gap: 2.5rem;
+    }
+
+    .exercise-details {
+        padding-top: 0;
+    }
+
+    .main-exercise-image {
+        height: 20rem;
+    }
+
+    .camera-button {
+        margin-top: 1.5rem;
+    }
+
+    .related-grid {
+        gap: 1.2rem;
+    }
+
+    .related-image {
+        height: 12rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .exercise-page {
+        padding: 1.2rem 1rem 4rem;
+    }
+
+    .exercise-container {
+        gap: 2rem;
+    }
+
+    .main-exercise-card {
+        padding: 0.75rem;
+
+        border-radius: 1rem;
+    }
+
+    .main-exercise-image {
+        height: 15rem;
+
+        border-radius: 0.8rem;
+    }
+
+    .exercise-title-row h1 {
+        font-size: 1.15rem;
+    }
+
+    .exercise-duration {
+        font-size: 0.75rem;
+    }
+
+    .exercise-description {
+        font-size: 0.8rem;
+    }
+
+    .exercise-details h2 {
+        font-size: 1.1rem;
+    }
+
+    .instructions {
+        font-size: 0.85rem;
+    }
+
+    .camera-button {
+        height: 3rem;
+
+        font-size: 0.9rem;
+    }
+
+    .related-grid {
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+    }
+
+    .related-image {
+        height: 13rem;
+    }
+}

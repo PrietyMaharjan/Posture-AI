@@ -1,0 +1,220 @@
+@import url("normalize.css");
+@import url("font.css");
+@import url("theme.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: #EEF4F8;
+}
+
+.questionnaire-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.questionnaire-card {
+    width: 100%;
+    max-width: 35rem;
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1.25rem 1.375rem 1.75rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .15);
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.back-btn {
+    width: 3rem;
+    height: 3rem;
+    border: 0.0625rem solid #D6DEE6;
+    border-radius: 0.75rem;
+    background: #fff;
+    color: #1D6FA3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 0.625rem;
+    background: #E6EDF4;
+    border-radius: 1.875rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 70%;
+    height: 100%;
+    background: #176D9C;
+}
+
+.step-count {
+    color: #9AA8B5;
+    font-weight: 600;
+}
+
+h1 {
+    margin-top: 1.125rem;
+    font-size: 1.375rem;
+    color: #111;
+}
+
+.subtitle {
+    margin-top: 0.375rem;
+    color: #667085;
+    font-size: 1rem;
+}
+
+.body-wrapper {
+    width: 10.625rem;
+    height: 15.625rem;
+    margin: 2.1875rem auto;
+    position: relative;
+}
+
+.head {
+    width: 2.625rem;
+    height: 2.625rem;
+    border: 0.1875rem solid #8FA0B0;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.neck {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #E8EFF4;
+    border: 0.125rem solid #8FA0B0;
+    position: absolute;
+    left: 50%;
+    top: 2.375rem;
+    transform: translateX(-50%);
+}
+
+.arm {
+    position: absolute;
+    top: 3.625rem;
+    left: 50%;
+    width: 4rem;
+    height: 0.125rem;
+    background: #8FA0B0;
+    transform: translateX(-50%);
+}
+
+.left-shoulder {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #E8EFF4;
+    border: 0.125rem solid #8FA0B0;
+    position: absolute;
+    left: 2.375rem;
+    top: 3.125rem;
+}
+
+.body-line {
+    position: absolute;
+    left: 50%;
+    top: 3.875rem;
+    width: 0.125rem;
+    height: 5.9375rem;
+    background: #8FA0B0;
+    transform: translateX(-50%);
+}
+
+.spine-one,
+.spine-two {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #E8EFF4;
+    border: 0.125rem solid #8FA0B0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.spine-one {
+    top: 5.375rem;
+}
+
+.spine-two {
+    top: 7.875rem;
+}
+
+.left-leg,
+.right-leg {
+    position: absolute;
+    width: 0.125rem;
+    height: 5.125rem;
+    background: #8FA0B0;
+    top: 9.1875rem;
+}
+
+.left-leg {
+    left: 4.875rem;
+    transform: rotate(15deg);
+    transform-origin: top;
+}
+
+.right-leg {
+    right: 4.875rem;
+    transform: rotate(-15deg);
+    transform-origin: top;
+}
+
+.selectable {
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.selectable.active {
+    background: #D94C4C;
+    border-color: #D94C4C;
+}
+
+.selectable:hover {
+    border-color: #D94C4C;
+}
+
+.next-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    background: #0f6c9f;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.next-btn:hover {
+    background: #0b5c87;
+}

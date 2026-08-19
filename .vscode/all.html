@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PostureAI - Exercises</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+
+    <div class="exercises">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <img src="images/logo.jpg" alt="PostureAI Logo">
+                <h2>PostureAI</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <a href="dashboard.html" class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M3 10.5L12 3L21 10.5V21H15V15H9V21H3V10.5Z" fill="none" stroke="currentColor"
+                            stroke-width="1.8" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+
+                <a href="scan.html" class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <rect x="4" y="6" width="16" height="13" rx="2" fill="none" stroke="currentColor"
+                            stroke-width="1.8">
+                        </rect>
+                        <circle cx="12" cy="12.5" r="3" fill="none" stroke="currentColor" stroke-width="1.8">
+                        </circle>
+                        <path d="M8 6L9 4H15L16 6" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round">
+                        </path>
+                    </svg>
+                    <span>Scan</span>
+                </a>
+
+                <a href="all.html" class="nav-item active">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="5" r="2" fill="none" stroke="currentColor" stroke-width="1.7">
+                        </circle>
+                        <path d="M12 7V19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+                        </path>
+                        <path d="M7 10L12 9L17 10" fill="none" stroke="currentColor" stroke-width="1.7"
+                            stroke-linecap="round">
+                        </path>
+                        <path d="M9 19L12 13L15 19" fill="none" stroke="currentColor" stroke-width="1.7"
+                            stroke-linecap="round">
+                        </path>
+                    </svg>
+                    <span>Exercises</span>
+                </a>
+
+                <a href="progressdaily.html" class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M4 19V14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                        </path>
+                        <path d="M10 19V10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                        </path>
+                        <path d="M16 19V5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                        </path>
+                        <path d="M3 19H21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                        </path>
+                        <path d="M4 11L9 8L14 10L20 4" fill="none" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round">
+                        </path>
+                    </svg>
+                    <span>Progress</span>
+                </a>
+
+                <a href="profile.html" class="nav-item">
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="1.7">
+                        </circle>
+                        <path d="M5 20C5.7 16.5 8.2 14.5 12 14.5C15.8 14.5 18.3 16.5 19 20" fill="none"
+                            stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+                        </path>
+                    </svg>
+                    <span>Profile</span>
+                </a>
+
+            </nav>
+
+            <div class="sidebar-user">
+                <div class="user-avatar"></div>
+
+                <div class="user-info">
+                    <strong>Priety Maharjan</strong>
+                    <small>Free Plan</small>
+                </div>
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="top-header">
+
+                <h1>Exercises</h1>
+
+                <div class="header-right">
+
+                    <div class="search">
+
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="6" fill="none" stroke="currentColor" stroke-width="1.7">
+                            </circle>
+
+                            <path d="M16 16L20 20" fill="none" stroke="currentColor" stroke-width="1.7"
+                                stroke-linecap="round">
+                            </path>
+                        </svg>
+
+                        <input type="text" placeholder="Search">
+
+                    </div>
+
+                    <a href="notification.html" class="notification">
+
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 9C18 5.7 15.8 3.5 12 3.5C8.2 3.5 6 5.7 6 9V13L4.5 16H19.5L18 13V9Z" fill="none"
+                                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+                            </path>
+
+                            <path d="M10 19C10.5 20 11.2 20.5 12 20.5C12.8 20.5 13.5 20 14 19" fill="none"
+                                stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                            </path>
+                        </svg>
+
+                        <span class="notification-dot"></span>
+
+                    </a>
+
+                </div>
+
+            </header>
+
+            <section class="exercise-content">
+
+                <div class="exercise-filters">
+
+                    <button class="filter-btn active">All</button>
+                    <a href="neck.html" class="filter-btn">
+                        Neck
+                    </a>
+                    <a href="shoulder.html" class="filter-btn">
+                        Shoulder
+                    </a>
+                    <a href="back.html" class="filter-btn">
+                        Back
+                    </a>
+                    <a href="core.html" class="filter-btn">
+                        Core
+                    </a>
+                </div>
+
+                <div class="exercise-grid">
+
+                    <a href="wallangels.html" class="exercise-card">
+
+                        <img src="images/Wall Angels 2.png" alt="Wall Angels">
+
+                        <div class="exercise-info">
+                            <h3>Wall Angels</h3>
+                            <span>4 mins</span>
+                        </div>
+
+                    </a>
+
+                    <a href="chintucks.html" class="exercise-card">
+
+                        <img src="images/chin tucks2.png" alt="Chin Tucks">
+
+                        <div class="exercise-info">
+                            <h3>Chin Tucks</h3>
+                            <span>3 mins</span>
+                        </div>
+
+                    </a>
+
+                    <a href="doorwaystretch.html" class="exercise-card">
+
+                        <img src="images/doorway stretch2.png" alt="Doorway Stretch">
+
+                        <div class="exercise-info">
+                            <h3>Doorway Stretch</h3>
+                            <span>5 mins</span>
+                        </div>
+
+                    </a>
+
+                    <a href="birddog.html" class="exercise-card">
+
+                        <img src="images/Bird Dog.png" alt="Bird Dog Stretch">
+
+                        <div class="exercise-info">
+                            <h3>Bird Dog</h3>
+                            <span>4 mins</span>
+                        </div>
+
+                    </a>
+
+                    <a href="catcowstretch.html" class="exercise-card">
+
+                        <img src="images/Cat-cow Stretch.png" alt="Cat Cow Stretch">
+
+                        <div class="exercise-info">
+                            <h3>Cat cow Stretch</h3>
+                            <span>3 mins</span>
+                        </div>
+
+                    </a>
+
+                    <a href="hipflexerstretch.html" class="exercise-card">
+
+                        <img src="images/Hip Flexor Stretch.png" alt="Hip Flexor Stretch">
+
+                        <div class="exercise-info">
+                            <h3>Hip Flexor Stretch</h3>
+                            <span>5 mins</span>
+                        </div>
+
+                        <a href="neckrolls.html" class="exercise-card">
+
+                            <img src="images/Neck Rolls.png" alt="Neck Rolls">
+
+                            <div class="exercise-info">
+                                <h3>Neck Rolls</h3>
+                                <span>5 mins</span>
+                            </div>
+
+                            <a href="thoracicrotation.html" class="exercise-card">
+
+                                <img src="images/Thoracic Rotation.png" alt="Thoracic Rotation">
+
+                                <div class="exercise-info">
+                                    <h3>Thoracic-Rotation</h3>
+                                    <span>5 mins</span>
+                                </div>
+                            </a>
+
+                            <a href="glutebridges.html" class="exercise-card">
+
+                                <img src="images/glute bridgees.png" alt="Glute Bridges">
+
+                                <div class="exercise-info">
+                                    <h3>Glute Bridges</h3>
+                                    <span>5 mins</span>
+                                </div>
+                            </a>
+
+                            <a href="deadbug.html" class="exercise-card">
+
+                                <img src="images/dead bug2.png" alt="Dead Bug">
+
+                                <div class="exercise-info">
+                                    <h3>Dead Bug</h3>
+                                    <span>5 mins</span>
+                                </div>
+                            </a>
+
+                            <a href="bandpullaparts.html" class="exercise-card">
+
+                                <img src="images/band pull apart2.png" alt="Band Pull Aparts">
+
+                                <div class="exercise-info">
+                                    <h3>Band Pull Aparts</h3>
+                                    <span>3 mins</span>
+                                </div>
+                            </a>
+
+                            <a href="t-spinerotation.html" class="exercise-card">
+
+                                <img src="images/t-spine rotation.png" alt="T-Spine Rotation">
+
+                                <div class="exercise-info">
+                                    <h3>T-Spine Rotation</h3>
+                                    <span>3 mins</span>
+                                </div>
+                            </a>
+
+
+
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

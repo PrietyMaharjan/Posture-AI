@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire 6</title>
+
+    <link rel="stylesheet" href="css/questionnaire6.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="questionnaire-wrapper">
+
+        <div class="questionnaire-card">
+
+            <!-- Top Bar -->
+            <div class="top-bar">
+
+                <a href="questionnaire5.html" class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <span class="step-count">6 to 10</span>
+
+            </div>
+
+            <h1>Where do you feel pain the most?</h1>
+
+            <p class="subtitle">
+                Tap all areas that apply
+            </p>
+
+            <div class="body-wrapper">
+
+                <div class="head"></div>
+
+                <div class="neck selectable"></div>
+
+                <div class="left-shoulder selectable"></div>
+
+                <div class="spine-one selectable"></div>
+
+                <div class="spine-two selectable"></div>
+
+                <div class="arm"></div>
+
+                <div class="body-line"></div>
+
+                <div class="left-leg"></div>
+
+                <div class="right-leg"></div>
+
+            </div>
+
+            <a href="questionnaire7.html" class="next-btn">
+                Next
+            </a>
+
+        </div>
+
+    </div>
+
+    <script>
+        const bodyParts = document.querySelectorAll(".selectable");
+
+        bodyParts.forEach(part => {
+            part.addEventListener("click", () => {
+                part.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

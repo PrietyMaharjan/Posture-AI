@@ -1,0 +1,14 @@
+.list {
+    background: #fff;
+    border-radius: var(--border-radius);
+    padding: var(--margin);
+}
+
+.entry {
+    border-bottom: 0.0625rem solid #eee;
+}
+
+.entry button {
+    border: 0;
+    font-size: 0.75rem;
+}
